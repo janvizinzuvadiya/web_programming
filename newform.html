@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>REGISTER</title>
+    <style>
+    label,select
+    { 
+        border: 2px solid red;
+    }
+    </style>
+</head>
+<body>
+<form action="newform.php" method="get">
+    <table bgcolor="#ffd7b5" align="center">
+    <tr>
+    <th colspan="2">
+        Registration Form
+    </th>
+    </tr>
+    <tr>
+        <td>Username:</td>
+        <td><input type="text" style="border-color:red"  name="unm" placeholder="enter username"></td>
+    </tr>  
+    <tr>
+        <td>Password:</td>
+        <td><input type="password" style="border-color:red"  name="pwd" placeholder="Enter password"></td>
+    </tr>      
+    <tr>
+        <td>Name:</td>
+        <td><input type="text" style="border-color:red"  name="nm" placeholder="enter name"></td>
+    </tr>
+    <tr>
+        <td>Address:</td>
+        <td><input type="text" style="border-color:red"  name="add" placeholder="enter address"></td>
+    </tr>
+    <tr>
+        <td>Country:</td>
+        <td><select name="country">
+            <option value="disable">(please select a country)</option>
+            <option value="india" >India</option>
+            <option value="us">United states</option>
+            <option value="uk"  >United kingdom</option>
+            <option value="africca"  >Africa</option>
+          </select></td>
+    </tr>
+    <tr>
+        <td>ZIP Code:</td>
+        <td><input type="text" style="border-color:red"  name="zip" placeholder="enter code"></td>
+    </tr>
+    <tr>
+        <td> Email:</td>
+        <td> <input type="email" style="border-color:red" name="email" placeholder="enter E-mail"></td>
+    </tr>
+    <tr>
+    <td>Sex:</td>
+    <td><input type="radio" name="sx" id="sx">
+        <label value="male"  >Male</label>
+        <input type="radio" name="sx" id="sx">
+        <label value="female"  >Female</label></td>
+    </tr>
+    <tr>
+        <td>Language:</td>
+        <td><input type="checkbox" name="lg" id="sx" >
+            <label value="english" border="1"  >English</label>
+            <input type="checkbox" name="lg" id="sx">
+            <label value="non-english" >Non English</label></td>
+    </tr>
+    <tr>
+        <td>About:</td>
+        <td><textarea name="ab" style="border-color:red" ></textarea></td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center"><input type="submit" value="submit" style="border-color:red" ></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
